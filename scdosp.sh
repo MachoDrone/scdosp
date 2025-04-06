@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# run with:  wget -O - https://raw.githubusercontent.com/MachoDrone/scdosp/refs/heads/main/scdosp.sh | bash
 # ANSI color codes
 BOLD_GREEN="\e[1;32m"
 GREEN="\e[32m"
