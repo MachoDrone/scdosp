@@ -174,7 +174,6 @@ Firewall: $FIREWALL_COLOR | Trace: N/A | DNS Time: $DNS_TIME_COLOR
 WiFi: $WIFI_COLOR | High Usage: $HIGH_USAGE_COLOR
 Cleanup: Containers (speedtest-docker) & speedtest-cli removed
 ${BOLD_GREEN}============================================================${RESET}
-bash -c 'if grep -qi "microsoft" /proc/version || grep -qi "WSL" /proc/version; then podman info >/dev/null 2>&1 && echo -e "\e[34mPodman is up and running (WSL2)\e[0m" || echo -e "\e[34mPodman is not running (WSL2)\e[0m"; else docker inspect -f "{{.State.Running}}" podman 2>/dev/null | grep -q "true" && echo -e "\e[34mPodman is up and running (in Docker)\e[0m" || echo -e "\e[34mPodman is not running (in Docker)\e[0m"; fi'
 EOF
 )
 
